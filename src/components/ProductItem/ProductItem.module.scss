@@ -1,0 +1,64 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    .product-img {
+        width: 100%;
+        background-size: cover;
+    }
+    .sale-off {
+        position: absolute;
+
+        span {
+            position: absolute;
+            background: rgba(0, 0, 0, 0)
+                url(https://360boutique.vn/wp-content/themes/360boutique/img/new-tag-png-4.png)
+                repeat scroll 0 0;
+            color: #fff;
+            display: block;
+            font-size: 1.3rem;
+            font-weight: bold;
+            height: 73px;
+            left: 8px;
+            padding: 12px;
+            right: -12px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 75px;
+            z-index: 9;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    .name {
+        font-size: 1.4rem;
+    }
+}
+
+.price {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    .price-default {
+        color: #f94c43;
+        margin-right: 12px;
+    }
+
+    .price-default.del {
+        color: #939393;
+        text-decoration: line-through;
+    }
+
+    .price-competitive {
+        color: #f94c43;
+        text-decoration: underline;
+    }
+}

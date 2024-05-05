@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    + .wrapper {
+        margin-left: 16px;
+    }
+}
+.icon + .content,
+.content + .icon {
+    margin-left: 8px;
+}
+
+.primary {
+    background-color: #000;
+    color: #fff;
+    padding: 13px 25px;
+
+    border: 1px solid #000;
+    text-transform: uppercase;
+    &:hover {
+        color: #000;
+        background-color: transparent;
+    }
+}

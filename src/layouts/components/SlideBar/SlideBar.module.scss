@@ -1,0 +1,42 @@
+.wrapper {
+}
+
+.new-posts {
+    padding: 19px;
+    border: 1px solid #e3e5ec;
+
+    h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        border-bottom: 1px solid #000;
+        margin: 24px 0;
+        padding-bottom: 12px;
+    }
+
+    .new-post {
+        display: flex;
+        margin-bottom: 12px;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        border-bottom: 1px #efefef solid;
+        &:last-child {
+            border-bottom: none;
+        }
+
+        img {
+            background-size: cover;
+        }
+
+        .new-post--content {
+            margin-left: 12px;
+            h5 {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.6;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
